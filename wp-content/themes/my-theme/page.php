@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php /* Template Name: Main Page */
+
+get_header(); ?>
 
 	<div class="container">
 		<?php the_post(); ?>
