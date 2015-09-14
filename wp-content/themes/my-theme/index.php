@@ -12,7 +12,7 @@
            
             <div class="container" id="1">
                 <div class="title-box flex flex-column flex-j-center">
-                    <h1 id="name">EURSULA  HICKS</h1>
+                    <h2 id="name">EURSULA HICKS</h1>
            
                     <h1 id="title">WEB DEVELOPER</h1>
                 </div>
@@ -33,6 +33,32 @@
     <section>
         <div class="flex flex-j-center">
             <h1 class="link-title" id="3">WORK</h1>
+        </div>
+        <div class="item-box flex flex-j-around">
+            <div class="item flex flex-column flex-j-center">
+                <a href="">
+                    <div class="round">
+                        <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/nz-fest-3.png' ) ); ?>" alt="">
+                    </div>
+                    <h3>NZ Student Film Festival</h3>
+                </a>
+            </div>
+            <div class="item flex flex-column flex-j-center">
+                <a href="">
+                    <div class="round">
+                        <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/beauty-boutique.png' ) ); ?>" alt="">
+                    </div>
+                    <h3>Beauty Boutique</h3>
+                </a>
+            </div>
+            <div class="item flex flex-column flex-j-center">
+                <a href="">
+                    <div class="round">
+                        <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/forme.png' ) ); ?>" alt="">
+                    </div>
+                    <h3>Forme Hair Design</h3>
+                </a>
+            </div>
         </div>
     </section>
     <section class="dark">

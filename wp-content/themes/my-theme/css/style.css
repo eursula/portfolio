@@ -187,6 +187,12 @@ table {
   border-spacing: 0; }
 
 /*------------------------End Of Normalise --------*/
+@font-face {
+  font-family: MovusBrushPen;
+  src: url(/css/MovusBrushPen.ttf); }
+@font-face {
+  font-family: pennellino;
+  src: url(/css/pennellino.ttf); }
 body {
   margin: 0 auto;
   font-family: 'Andale Mono'; }
@@ -311,18 +317,28 @@ nav a {
   margin-top: -70px; }
 
 .title-box {
-  height: 50vh; }
+  height: 50vh;
+  padding-top: 70px; }
   .title-box h1 {
-    font-size: 3em; }
+    letter-spacing: 2px;
+    font-weight: thin; }
   .title-box #name {
-    color: white; }
+    font-size: 5em;
+    color: white;
+    font-family: pennellino;
+    letter-spacing: 10px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.2em; }
   .title-box #title {
-    color: #EB866A; }
+    color: #EB866A;
+    font-size: 2em;
+    letter-spacing: 5px; }
 
 .link-title {
   padding-top: 7vh;
-  font-size: 1.5em;
-  margin-right: 10px; }
+  font-size: 1.8em;
+  margin-right: 10px;
+  font-family: pennellino; }
 
 img.my-pic {
   padding-top: 60px;
@@ -335,15 +351,54 @@ img.my-pic {
   padding-right: 200px;
   padding-top: 100px; }
 
-.dark {
-  background-color: #EB866A; }
+/*----------------------------------- Work ---------------------------------------*/
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px; }
+  .round img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%; }
 
+img.color-flip {
+  -webkit-filter: url(filters.svg#grayscale);
+          filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE5+ */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Chrome Canary */
+  overflow: hidden; }
+
+img.color-flip:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  overflow: hidden; }
+
+.item-box {
+  padding-top: 50px; }
+
+.item a {
+  text-decoration: none; }
+  .item a h3 {
+    color: black;
+    font-size: 0.8em; }
+
+h3 {
+  text-align: center; }
+
+/*----------------------------------- Contact ---------------------------------------*/
 .contact-box {
-  min-height: 90vh; }
+  height: 95vh; }
 
 /*----------------------------------- Footer ---------------------------------------*/
 footer {
-  margin-bottom: 10px; }
+  margin-bottom: 0px;
+  height: 5vh; }
+  footer p {
+    font-size: .8em; }
 
 /*----------------------------------- Flexbox ---------------------------------------*/
 .flex {

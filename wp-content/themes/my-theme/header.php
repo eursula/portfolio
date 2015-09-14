@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <script src="https://use.typekit.net/wib2hkz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>Eursula Hicks Portfolio</title>
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <div class="main">
         <section>
             <header>
@@ -15,7 +17,7 @@
                     </div>
                     
                 </div>
-                <i class="fa fa-bars hamburger"></i>
+                <i class="navbar navbar-default navbar-fixed-top" role="navigation" class="fa fa-bars hamburger"></i>
                 <nav id="nav-links">
                     <ul class="nav flex flex-j-end flex-j-center">
                         <li><a href="#1">HOME</a></li>

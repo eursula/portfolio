@@ -5,6 +5,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script|Yesteryear|Sacramento|Rochester|Allura|IM+Fell+DW+Pica|Merienda+One|Norican|Engagement|Lovers+Quarrel);
 
+@font-face {
+    font-family: MovusBrushPen;
+    src: url(/css/MovusBrushPen.ttf);
+}
+
+@font-face {
+    font-family: pennellino;
+    src: url(/css/pennellino.ttf);
+}
+
 $pink: #EB866A;
 $yellow: #FFBF00;
 
@@ -160,24 +170,34 @@ nav{
 
 .title-box{
     height: 50vh;
+    padding-top: 70px;
 
     h1{
-        font-size: 3em;  
+        letter-spacing: 2px;
+        font-weight: thin;  
     }
 
     #name{
+        font-size: 5em;
         color: white;
+        font-family: pennellino;
+        letter-spacing: 10px;
+        -webkit-font-smoothing:antialiased;
+        line-height: 1.2em;
     }
 
     #title{
         color: $pink;
+        font-size: 2em;
+        letter-spacing: 5px;
     }
 }
 
 .link-title{
     padding-top: 7vh;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-right: 10px;
+    font-family: pennellino;
 }
 
 img.my-pic {
@@ -193,18 +213,78 @@ img.my-pic {
     padding-top: 100px;
 }
 
+/*----------------------------------- Work ---------------------------------------*/
+
+.round {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
+    img {
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+
+    }
+}
+
+
+img.color-flip {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    //-webkit-transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+img.color-flip:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    //-webkit-transform: scale(1.1);
+    //-webkit-transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.item-box{
+    padding-top: 50px;
+}
+
+.item a{
+    text-decoration: none;
+    
+
+    h3{
+        color: black;
+        font-size: 0.8em;
+    }
+}
+
+h3{
+    text-align: center;
+}
+
+/*----------------------------------- Contact ---------------------------------------*/
+
 .dark{
-    background-color: $pink;
+    //background-color: $pink;
 }
 
 .contact-box{
-    min-height: 90vh;
+    height: 95vh;
 }
 
 /*----------------------------------- Footer ---------------------------------------*/
 
 footer{
-    margin-bottom: 10px;
+    //background-color: $pink;
+    margin-bottom: 0px;
+    height: 5vh;
+
+    p{
+        font-size: .8em;
+    }
+    
 }
 
 /*----------------------------------- Flexbox ---------------------------------------*/

@@ -8,9 +8,9 @@
         </div>
     </div>
     <div class="copy flex flex-row flex-j-center flex-j-space">
-        <p>&copy; Eursula Hicks 2015</p>
+        <p>&copy; Eursula Hicks 2015 |</p>
         <span data-icon="&#xe00a;"></span>
-        <p>All rights reserved</p>
+        <p>&nbsp;All rights reserved</p>
     </div>
 </footer>
     <?php wp_footer(); ?>
