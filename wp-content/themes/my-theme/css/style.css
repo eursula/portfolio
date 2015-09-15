@@ -207,6 +207,13 @@ body {
   display: flex;
   max-width: 960px; }
 
+.single-container {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 960px;
+  margin-bottom: 50px; }
+
 .main-image img {
   width: 100vw;
   position: fixed;

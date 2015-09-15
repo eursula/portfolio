@@ -1,5 +1,6 @@
 <?php 
 
+
 # Template Directory
 $dir = get_template_directory_uri();
 
@@ -41,7 +42,34 @@ if(!is_admin()){
     );
     wp_enqueue_script('onepagescroll');
 
+    add_theme_support( 'post-thumbnails' );  
+    
+
 }
+
+if (class_exists('MultiPostThumbnails')) {
+        new MultiPostThumbnails(
+            array(
+                'label'     => '2nd Feature Image',
+                'id'        => 'feature-image-2',
+                'post_type' => 'work'
+            )
+        );
+        new MultiPostThumbnails(
+            array(
+                'label'     => '3rd Feature Image',
+                'id'        => 'feature-image-3',
+                'post_type' => 'work'
+            )
+        );
+        new MultiPostThumbnails(
+            array(
+                'label'     => '4th Feature Image',
+                'id'        => 'feature-image-4',
+                'post_type' => 'work'
+            )
+        );
+    }  
 
 add_filter('show_admin_bar', '__return_false');
 

@@ -15,7 +15,6 @@
                     <div class="main-image">
                         <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/background-image.jpg' ) ); ?>" id="home" alt="home-image">
                     </div>
-                    
                 </div>
                 <i class="navbar navbar-default navbar-fixed-top" role="navigation" class="fa fa-bars hamburger"></i>
                 <nav id="nav-links">

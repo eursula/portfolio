@@ -1,20 +1,30 @@
-<?php get_header(); ?>
+<?php  
+
+require('../wp-config.php');
+
+$wp->init();
+$wp->parse_request();
+$wp->query_posts();
+$wp->register_globals();
+
+$postID = get_the_ID();
+
+$attachment_id = get_post_thumbnail_id( $postID ); // attachment ID
+//$thumb = get_post_thumbnail_id();
+$img_url = wp_get_attachment_url( $attachment_id,'full'); //get img URL
+
+get_header(); ?>
 
         <div class="container">
             <?php if ( have_posts()) :
-           while ( have_posts()) : the_post(); ?>
-
-           <h2><?php echo the_title(); ?></h2>
-
-           <?php echo the_content(); ?>
-
+            while ( have_posts()) : the_post(); ?>
             <?php endwhile; else: ?>
            
             <div class="container" id="1">
                 <div class="title-box flex flex-column flex-j-center">
                     <h2 id="name">EURSULA HICKS</h1>
            
-                    <h1 id="title">WEB DEVELOPER</h1>
+                    <h1 id="title">PERSONAL PORTFOLIO</h1>
                 </div>
             </div>
         </div>
@@ -31,6 +41,21 @@
         </div>
     </section>
     <section>
+        <?php
+            $args = [
+                'post_type' => 'work',
+                'order'     => 'DESC',
+                'orderby'   => 'menu_order',
+                'showposts' => -1
+            ];
+
+                query_posts($args);
+            ?>
+        <?php if(have_posts()): ?>
+
+        <?php while(have_posts()): ?>
+
+        <?php the_post(); ?>
         <div class="flex flex-j-center">
             <h1 class="link-title" id="3">WORK</h1>
         </div>
@@ -59,7 +84,18 @@
                     <h3>Forme Hair Design</h3>
                 </a>
             </div>
+            <div class="item flex flex-column flex-j-center">
+                <a href="<?php the_permalink(); ?>">
+                    <div class="round">
+                        <?=types_render_field('image', ['url' => false]); ?>
+                    </div>
+                    <h3><? the_title() ?></h3>
+                </a>
+            </div>
         </div>
+        <?php endwhile; ?>
+            
+        <?php endif; ?>
     </section>
     <section class="dark">
         <div class="contact-box">
