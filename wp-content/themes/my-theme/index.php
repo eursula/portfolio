@@ -19,11 +19,9 @@ get_header(); ?>
             <?php if ( have_posts()) :
             while ( have_posts()) : the_post(); ?>
             <?php endwhile; else: ?>
-           
             <div class="container" id="1">
                 <div class="title-box flex flex-column flex-j-center">
                     <h2 id="name">EURSULA HICKS</h1>
-           
                     <h1 id="title">PERSONAL PORTFOLIO</h1>
                 </div>
             </div>
@@ -59,7 +57,7 @@ get_header(); ?>
         <div class="flex flex-j-center">
             <h1 class="link-title" id="3">WORK</h1>
         </div>
-        <div class="item-box flex flex-j-around">
+        <div class="item-box flex flex-j-around flex-wrap">
             <div class="item flex flex-column flex-j-center">
                 <a href="">
                     <div class="round">

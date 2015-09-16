@@ -208,6 +208,10 @@ body {
   max-width: 960px; }
 
 .single-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
@@ -310,6 +314,9 @@ nav a {
       font-size: 1.2em;
       margin-top: 20px; } }
 
+.single-nav a {
+  color: black; }
+
 .nav {
   margin-left: 300px;
   margin-right: 300px; }
@@ -399,6 +406,10 @@ h3 {
 /*----------------------------------- Contact ---------------------------------------*/
 .contact-box {
   height: 95vh; }
+
+/*----------------------------------- Single Post Page ---------------------------------------*/
+.icon-single {
+  padding-top: 20px; }
 
 /*----------------------------------- Footer ---------------------------------------*/
 footer {
