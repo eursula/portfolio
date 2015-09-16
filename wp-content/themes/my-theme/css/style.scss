@@ -26,13 +26,13 @@ body{
     //transition: padding-top 0.4s ease;
 }
 
-.container{
+/*.container{
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
     display: flex;
     max-width: 960px;
-}
+}*/
 
 .single-container{
     display: flex;
@@ -160,6 +160,11 @@ nav{
     }
 }
 
+a:hover, a:active, a:focus {
+  /* styling for any way a link is about to be used */
+  outline: 0;
+}
+
 .single-nav a{
     color: black;
 }
@@ -207,7 +212,7 @@ nav{
 }
 
 .link-title{
-    padding-top: 7vh;
+    //padding-top: 7vh;
     font-size: 1.8em;
     margin-right: 10px;
     font-family: pennellino;

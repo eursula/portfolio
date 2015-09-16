@@ -197,16 +197,13 @@ body {
   margin: 0 auto;
   font-family: 'Andale Mono'; }
 
-.container {
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 960px; }
-
+/*.container{
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    max-width: 960px;
+}*/
 .single-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -314,6 +311,10 @@ nav a {
       font-size: 1.2em;
       margin-top: 20px; } }
 
+a:hover, a:active, a:focus {
+  /* styling for any way a link is about to be used */
+  outline: 0; }
+
 .single-nav a {
   color: black; }
 
@@ -349,7 +350,6 @@ nav a {
     letter-spacing: 5px; }
 
 .link-title {
-  padding-top: 7vh;
   font-size: 1.8em;
   margin-right: 10px;
   font-family: pennellino; }
