@@ -16,19 +16,16 @@ $img_url = wp_get_attachment_url( $attachment_id,'full'); //get img URL
 get_header(); ?>
     <section id="intro" class="intro-section">
         <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="container">
-                            <?php if ( have_posts()) :
-                            while ( have_posts()) : the_post(); ?>
-                            <?php endwhile; else: ?>
-                            <div class="container" id="1">
-                                <div class="col-lg-12">
-                                    <div class="title-box flex flex-column flex-j-center">
-                                        <h2 id="name">EURSULA HICKS</h1>
-                                        <h1 id="title">PERSONAL PORTFOLIO</h1>
-                                    </div>
-                                </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <?php if ( have_posts()) :
+                    while ( have_posts()) : the_post(); ?>
+                    <?php endwhile; else: ?>
+                    <div class="container" id="1">
+                        <div class="col-lg-12">
+                            <div class="title-box flex flex-column flex-j-center">
+                                <h2 id="name">EURSULA HICKS</h1>
+                                <h1 id="title">PERSONAL PORTFOLIO</h1>
                             </div>
                         </div>
                     </div>
@@ -56,6 +53,10 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <h1 class="link-title" id="3">WORK</h1>
+                    <div class="flex flex-j-around flex-wrap">
+                        
+                    
                     <?php
                         $args = [
                             'post_type' => 'work',
@@ -71,9 +72,7 @@ get_header(); ?>
                     <?php while(have_posts()): ?>
 
                     <?php the_post(); ?>
-                    <div class="flex flex-j-center">
-                        <h1 class="link-title" id="3">WORK</h1>
-                    </div>
+                    
                     <!--
                     <div class="item-box flex flex-j-around flex-wrap">
                         <div class="item flex flex-column flex-j-center">
@@ -108,10 +107,9 @@ get_header(); ?>
                                 <h3><? the_title() ?></h3>
                             </a>
                         </div>
-                    </div>
-                <?php endwhile; ?>
-                    
+                <?php endwhile; ?> 
                 <?php endif; ?>
+                </div>
             </div>
         </div>
     </section>
