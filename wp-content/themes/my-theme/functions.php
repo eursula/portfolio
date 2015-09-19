@@ -28,6 +28,14 @@ if(!is_admin()){
     wp_enqueue_style('scrolling-nav-style', $dir.'/css/scrolling-nav.css');
 
 
+    # Scrolling jquery
+    wp_register_script('scroll-jquery', $dir.'/js/jquery.js',
+        false,
+        false,
+        true
+    );
+    wp_enqueue_script('scroll-jquery');
+
     # Bootstrap script
     wp_enqueue_script( 'bootstrap-script', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', false, false, true);
 

@@ -24,7 +24,7 @@ html {
 
     .top-nav-collapse {
         padding: 0;
-        
+
     }
 }
 
@@ -40,6 +40,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
+    /*height: 500px;*/
     height: 100vh;
     padding-top: 150px;
     text-align: center;
@@ -47,23 +48,29 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
+    /*height: 700px;*/
     height: 100vh;
-    padding-top: 150px;
+    padding-top: 25vh;
     text-align: center;
     background: #fff;
 
 }
 
 .work-section {
+    /*min-height: 900px;*/
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 25vh;
     text-align: center;
     background: #fff;
+
+    
 }
 
 .contact-section {
-    height: 90vh;
+    /*height: 500px;*/
     /*padding-top: 30px;*/
+    height: 100vh;
+    padding-top: 15vh;
     text-align: center;
     background: #fff;
 

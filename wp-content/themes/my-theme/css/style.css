@@ -193,10 +193,22 @@ table {
 @font-face {
   font-family: pennellino;
   src: url(/css/pennellino.ttf); }
+@font-face {
+  font-family: painted;
+  src: url(/css/Painted.ttf); }
+@font-face {
+  font-family: vnt;
+  src: url(/css/Vnhltfap.ttf); }
 body {
-  margin: 0 auto;
-  font-family: "Andale Mono", Helvetica, sans-serif;
-  overflow-x: hidden; }
+    /*
+margin: 0 auto;
+
+//background-color: white;
+//transition: padding-top 0.4s ease;
+overflow-x: hidden;*/
+  top: 50%;
+  left: 50%;
+  font-family: "Andale Mono", Helvetica, sans-serif; }
 
 .main-container {
   margin: 0 auto;
@@ -223,8 +235,7 @@ body {
   width: 100vw;
   position: fixed;
   height: 80vh;
-  z-index: -1;
-  position: relative; }
+  z-index: -1; }
   @media screen and (min-width: 600px) {
     .main-image img {
       width: 100%;
@@ -265,27 +276,17 @@ nav.show {
     width: 100%;
     height: 0;
     padding-left: 20px;
-    z-index: 10000; } }
-  @media screen and (min-width: 200px) and (max-width: 600px) and (min-width: 520px) and (max-width: 699px) {
-    nav {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: right;
-      -webkit-justify-content: right;
-          -ms-flex-pack: right;
-              justify-content: right; } }
-
+    z-index: 10000;
+    display: none; } }
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 nav li {
   display: block;
-  line-height: 3;
+  line-height: 1;
   text-align: center;
-  margin-top: 16px; }
+  padding-bottom: 10px; }
   @media screen and (min-width: 600px) {
     nav li {
       display: -webkit-box;
@@ -300,8 +301,8 @@ nav li a {
   display: block; }
 nav a {
   text-decoration: none;
-  color: black;
-  font-size: 1.1em; }
+  color: #1d2120;
+  font-size: 1em; }
   @media screen and (min-width: 600px) and (max-width: 768px) {
     nav a {
       visibility: show;
@@ -312,10 +313,6 @@ nav a {
       font-size: 1.2em;
       margin-top: 20px; } }
 
-a:hover, a:active, a:focus {
-  /* styling for any way a link is about to be used */
-  outline: 0; }
-
 .single-nav a {
   color: black; }
 
@@ -323,14 +320,39 @@ a:hover, a:active, a:focus {
     margin-left: 300px;
     margin-right: 300px;
 }*/
-.left {
-  padding-right: 120px; }
+/*.left{
+    padding-right: 160px;
+    text-align: right;
+}
 
-.right {
-  padding-left: 70px; }
+.right{
+    //padding-left: 70px;
+    margin-left: -50px;
+    text-align: left;
+}*/
+.navbar-header {
+  position: fixed;
+  left: 0;
+  right: 0; }
 
 .icon {
-  margin-top: -70px; }
+  margin-top: -55px; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    .icon img {
+      width: 70%;
+      padding-top: 60px; } }
+
+a.active {
+  color: #EB866A; }
+
+/*a:hover{
+    color: $pink;
+}*/
+a, a:hover, a:active, a:focus {
+  outline: 0; }
+
+object, embed {
+  outline: 0; }
 
 .title-box {
   height: 50vh;
@@ -353,7 +375,8 @@ a:hover, a:active, a:focus {
 .link-title {
   font-size: 1.8em;
   margin-right: 10px;
-  font-family: pennellino, Helvetica, sans-serif; }
+  font-family: pennellino, Helvetica, sans-serif;
+  color: #1d2120; }
 
 img.my-pic {
   padding-top: 60px;
@@ -365,6 +388,16 @@ img.my-pic {
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 100px; }
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    .paragraph {
+      padding: 5px; }
+      .paragraph p {
+        text-align: justify; } }
+
+.greeting {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #EB866A; }
 
 /*----------------------------------- Work ---------------------------------------*/
 .round {
@@ -405,9 +438,6 @@ h3 {
   text-align: center; }
 
 /*----------------------------------- Contact ---------------------------------------*/
-.contact-box {
-  height: 95vh; }
-
 /*----------------------------------- Single Post Page ---------------------------------------*/
 .icon-single {
   padding-top: 20px; }

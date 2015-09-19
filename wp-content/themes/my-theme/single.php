@@ -27,6 +27,10 @@
 
                         <div class="single-image flex flex-j-center">
                             <?php the_post_thumbnail(); ?>
+
+                        </div>
+                        <div class="single-image flex flex-j-center">
+                            <?=types_render_field('image-description-1', ['output' => 'raw'])?>
                         </div>
                         <div class="single-image flex flex-j-center">
                             <?php if (class_exists('MultiPostThumbnails')) :

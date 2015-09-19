@@ -15,21 +15,39 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     src: url(/css/pennellino.ttf);
 }
 
+@font-face {
+    font-family: painted;
+    src: url(/css/Painted.ttf);
+}
+
+@font-face {
+    font-family: vnt;
+    src: url(/css/Vnhltfap.ttf);
+}
+
 $pink: #EB866A;
 $yellow: #FFBF00;
+$dark-green: #1d2120;
 
 $font-body: 'Andale Mono', Helvetica, sans-serif;
 $font-text: 'Amethysta', Helvetica, sans-serif;
 $font-name: pennellino, Helvetica, sans-serif;
+$font-vnt: vnt, Helvetica, sans-serif;
 
 
 
 body{
+        /*
     margin: 0 auto;
-    font-family: $font-body;
+    
     //background-color: white;
     //transition: padding-top 0.4s ease;
-    overflow-x: hidden;
+    overflow-x: hidden;*/
+    top: 50%;
+    left: 50%;
+    //margin-top: -100px;
+    //margin-left: -250px;
+    font-family: $font-body;
 }
 
 .main-container{
@@ -54,7 +72,8 @@ body{
     position: fixed;
     height: 80vh;
     z-index: -1;
-    position: relative;
+    //position: relative;
+    
 
     @media screen and (min-width: 600px){
         //margin-top: 100px;
@@ -63,6 +82,7 @@ body{
         //margin-top: 80px;
         height: 100vh;
         position: fixed;
+        //position: relative;
     }
 }
 
@@ -100,6 +120,8 @@ nav.show{
 }
 
 nav{
+    //position: fixed;
+
     @media screen and (min-width: 200px) and (max-width: 600px){
     //position: fixed;
     left: 0;
@@ -109,11 +131,8 @@ nav{
     height: 0;
     padding-left: 20px;
     z-index: 10000;
+    display: none;
 
-        @media screen and (min-width: 520px) and (max-width: 699px){
-        display: flex;
-        justify-content: right;
-        }
     }
     
 
@@ -127,9 +146,11 @@ nav{
 
     li{
         display: block;
-        line-height: 3;
+        line-height: 1;
         text-align: center;
-        margin-top: 16px;
+        //margin-top: 16px;
+        padding-bottom: 10px;
+
 
         @media screen and (min-width: 600px){
         display: flex;
@@ -149,8 +170,9 @@ nav{
 
     a{
         text-decoration: none;
-        color: black;
-        font-size: 1.1em;
+        color: #1d2120;
+        font-size: 1em;
+
 
         @media screen and (min-width: 600px) and (max-width: 768px) {
             visibility: show;
@@ -166,10 +188,6 @@ nav{
     }
 }
 
-a:hover, a:active, a:focus {
-  /* styling for any way a link is about to be used */
-  outline: 0;
-}
 
 .single-nav a{
     color: black;
@@ -180,16 +198,59 @@ a:hover, a:active, a:focus {
     margin-right: 300px;
 }*/
 
-.left{
-    padding-right: 120px;
+/*.left{
+    padding-right: 160px;
+    text-align: right;
 }
 
 .right{
-    padding-left: 70px;
+    //padding-left: 70px;
+    margin-left: -50px;
+    text-align: left;
+}*/
+
+.navbar-header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    //background-color: rgba(0, 0, 0, 0.6);
+
 }
 
+
 .icon{
-    margin-top: -70px;
+    margin-top: -55px;
+
+    @media screen and (min-width: 200px) and (max-width: 700px){
+        //margin-top: 5px;
+    }
+
+    img{
+        @media screen and (min-width: 200px) and (max-width: 700px){
+            width: 70%;
+            padding-top: 60px;
+        }
+
+    }
+
+}
+
+a.active {
+  color: $pink;
+}
+
+/*a:hover{
+    color: $pink;
+}*/
+
+section.active {}
+
+a, a:hover, a:active, a:focus{
+   outline: 0;
+}
+
+object, embed { 
+  outline: 0;
 }
 
 .title-box{
@@ -222,6 +283,7 @@ a:hover, a:active, a:focus {
     font-size: 1.8em;
     margin-right: 10px;
     font-family: $font-name;
+    color: $dark-green;
 }
 
 img.my-pic {
@@ -231,10 +293,28 @@ img.my-pic {
 }
 
 .paragraph{
+
+    @media screen and (min-width: 200px) and (max-width: 700px){
+        //width: 90vw;
+        padding: 5px;
+
+        p{
+            text-align: justify;
+        }
+
+    }
+
     font-family: $font-text;
+    //width: 60vw;
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 100px;
+    padding-top: 100px; 
+}
+
+.greeting{
+    font-size: 1.2em;
+    font-style: italic;
+    color: $pink;
 }
 
 /*----------------------------------- Work ---------------------------------------*/
@@ -294,9 +374,7 @@ h3{
     //background-color: $pink;
 }
 
-.contact-box{
-    height: 95vh;
-}
+
 
 /*----------------------------------- Single Post Page ---------------------------------------*/
 

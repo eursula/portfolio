@@ -17,17 +17,13 @@ get_header(); ?>
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
+                <?php if ( have_posts()) :
+                while ( have_posts()) : the_post(); ?>
+                <?php endwhile; else: ?>
                 <div class="col-lg-12">
-                    <?php if ( have_posts()) :
-                    while ( have_posts()) : the_post(); ?>
-                    <?php endwhile; else: ?>
-                    <div class="container" id="1">
-                        <div class="col-lg-12">
-                            <div class="title-box flex flex-column flex-j-center">
-                                <h2 id="name">EURSULA HICKS</h1>
-                                <h1 id="title">PERSONAL PORTFOLIO</h1>
-                            </div>
-                        </div>
+                    <div class="title-box flex flex-column flex-j-center">
+                        <h2 id="name">EURSULA HICKS</h1>
+                        <h1 id="title">PERSONAL PORTFOLIO</h1>
                     </div>
                 </div>
             </div>
@@ -39,11 +35,12 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="link-title" id="2">ABOUT</h1>
-                    <div class="flex flex-j-center">
+                    
                         <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/my-image.jpg' ) ); ?>" class="my-pic" alt="Eursula Hicks">
-                    </div>
-                    <div class="paragraph flex flex-j-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, aliquam, sed officia enim eaque sint doloribus sunt numquam tempore voluptatem eius saepe ea soluta corporis fuga dolorum a nobis molestias.</p>
+                    
+                    <div class="paragraph col-lg-12">
+                        <p><span class="greeting">Hello!</span> and thanks for visting my site.</p>
+                        <p>My name is Eursula Hicks and </p>
                     </div>
                 </div>
             </div>
@@ -55,8 +52,6 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <h1 class="link-title" id="3">WORK</h1>
                     <div class="flex flex-j-around flex-wrap">
-                        
-                    
                     <?php
                         $args = [
                             'post_type' => 'work',
@@ -107,8 +102,9 @@ get_header(); ?>
                                 <h3><? the_title() ?></h3>
                             </a>
                         </div>
-                <?php endwhile; ?> 
-                <?php endif; ?>
+                    <?php endwhile; ?> 
+                    <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +121,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    
     <?php endif; ?>
 
     <?php get_footer(); ?>

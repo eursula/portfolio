@@ -7,17 +7,17 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <title>Eursula Hicks Portfolio</title>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target="navbar-fixed-top">
     <!-- Navigation -->
+    <div class="img-overlay">
+        <div class="main-image">
+            <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/background-image.jpg' ) ); ?>" id="home" alt="home-image">
+        </div>
+    </div>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header page-scroll">
                 <header>
-                    <div class="img-overlay">
-                        <div class="main-image">
-                            <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/background-image.jpg' ) ); ?>" id="home" alt="home-image">
-                        </div>
-                    </div>
                     <!--<nav id="nav-links">-->
                         <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -26,20 +26,22 @@
                             <li class="hidden">
                                 <a class="page-scroll" href="#page-top"></a>
                             </li>
-                            <li><a class="page-scroll" href="#page-top">HOME</a></li>
+                            <li><a class="page-scroll" href="#intro">HOME</a></li>
                             <li class="left"><a class="page-scroll" href="#about">ABOUT</a></li>
+                            <!--<li class="left"><a class="page-scroll" href="#work"><img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/logo.png' ) ); ?>" alt="logo"></a></li>-->
                             <li class="right"><a class="page-scroll" href="#work">WORK</a></li>
                             <li><a class="page-scroll" href="#contact">CONTACT</a></li>
                         </ul>
-                        <div class="icon flex flex-j-end flex-j-center">
-                            <a class="navbar-brand page-scroll" href="#page-top">
-                                <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/logo.png' ) ); ?>" alt="logo">
-                            </a>
-                        </div>
                     </div>   
                 </header>
             </div>
         </div>
     </nav>
+    <!--
+    <div class="icon flex flex-j-end flex-j-center">
+        <a class="navbar-brand page-scroll" href="#page-top">
+            <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/logo.png' ) ); ?>" alt="logo">
+        </a>-->
+    </div>
     
 
