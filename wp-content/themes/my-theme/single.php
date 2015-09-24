@@ -67,6 +67,14 @@
                     </div>
                 </div>
             </div>
+            <div class="page-links flex flex-j-between flex-j-end">
+                <div class="previous">
+                    <?php previous_post_link(); ?>
+                </div>
+                <div class="next">
+                    <?php next_post_link(); ?>
+                </div>
+            </div>
             <div class="site-button">
                 <a href="<?=types_render_field('url', ['output' => 'raw'])?>" id="image-w" class="site-link flex flex-j-center" target="blank">View Site</a>
             </div>

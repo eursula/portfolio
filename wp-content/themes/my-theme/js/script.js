@@ -25,6 +25,7 @@ jQuery(function(){
                                         // the browser's width is less than 600, the fallback will kick in.
        direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
     });*/
+/*
     var sections = $('section')
   , nav = $('nav')
   , nav_height = nav.outerHeight();
@@ -44,8 +45,9 @@ jQuery(function(){
           nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
         }
         });
-    });
+    });*/
 
+    /*
     nav.find('a').on('click', function () {
       var $el = $(this)
         , id = $el.attr('href');
@@ -55,7 +57,18 @@ jQuery(function(){
       }, 500);
      
       return false;
+    });*/
+    $(function() {
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 100) {
+                $(".header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $(".header").removeClass("active");
+            }
+        });
     });
+
 });
 
 

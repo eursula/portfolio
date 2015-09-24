@@ -197,8 +197,14 @@ table {
   font-family: painted;
   src: url(/css/Painted.ttf); }
 @font-face {
-  font-family: vnt;
-  src: url(/css/Vnhltfap.ttf); }
+  font-family: wonderwall;
+  src: url(/css/wonderwall.ttf); }
+@font-face {
+  font-family: itaki;
+  src: url(/css/itaki.ttf); }
+@font-face {
+  font-family: 'coret';
+  src: url("/css/Coret-Koas-webfont.ttf"); }
 body {
     /*
 margin: 0 auto;
@@ -264,7 +270,7 @@ overflow-x: hidden;*/
   top: 15px;
   right: 10px;
   z-index: 1;
-  color: white; }
+  color: #ECECEC; }
 
 nav.show {
   height: auto;
@@ -275,9 +281,7 @@ nav.show {
     left: 0;
     width: 100%;
     height: 0;
-    padding-left: 20px;
-    z-index: 10000;
-    display: none; } }
+    z-index: 10000; } }
 nav ul {
   list-style: none;
   margin: 0;
@@ -299,9 +303,12 @@ nav li {
         margin-left: 15px; } }
 nav li a {
   display: block; }
+  @media screen and (min-width: 200px) and (max-width: 600px) {
+    nav li a {
+      padding: 10px;
+      font-size: 14px; } }
 nav a {
   text-decoration: none;
-  color: #1d2120;
   font-size: 1em; }
   @media screen and (min-width: 600px) and (max-width: 768px) {
     nav a {
@@ -335,14 +342,16 @@ nav a {
   left: 0;
   right: 0; }
 
+section
 .icon {
   margin-top: -55px; }
   @media screen and (min-width: 200px) and (max-width: 700px) {
+    section
     .icon img {
       width: 70%;
       padding-top: 60px; } }
 
-a.active {
+a.active-link {
   color: #EB866A; }
 
 /*a:hover{
@@ -357,20 +366,32 @@ object, embed {
 .title-box {
   height: 50vh;
   padding-top: 70px; }
+  @media screen and (min-width: 200px) and (max-width: 600px) {
+    .title-box {
+      padding-top: 50px;
+      font-size: 1.5em; } }
   .title-box h1 {
     letter-spacing: 2px;
     font-weight: thin; }
   .title-box #name {
-    font-size: 5em;
-    color: white;
+    font-size: 7em;
+    color: #ECECEC;
     font-family: pennellino, Helvetica, sans-serif;
     letter-spacing: 10px;
     -webkit-font-smoothing: antialiased;
-    line-height: 1.2em; }
+    line-height: 2; }
+    @media screen and (min-width: 200px) and (max-width: 600px) {
+      .title-box #name {
+        font-size: 4em;
+        line-height: 1; } }
   .title-box #title {
     color: #EB866A;
     font-size: 2em;
     letter-spacing: 5px; }
+    @media screen and (min-width: 200px) and (max-width: 600px) {
+      .title-box #title {
+        font-size: 1em;
+        line-height: 1; } }
 
 .link-title {
   font-size: 1.8em;
@@ -398,6 +419,29 @@ img.my-pic {
   font-size: 1.2em;
   font-style: italic;
   color: #EB866A; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+  height: auto;
+  background-color: transparent; }
+  .header a {
+    color: #ECECEC; }
+  .header a.active {
+    color: #EB866A; }
+  .header a:hover {
+    color: #EB866A; }
+
+.active {
+  background-color: #fff; }
+  .active a {
+    color: black; }
 
 /*----------------------------------- Work ---------------------------------------*/
 .round {
@@ -437,6 +481,21 @@ img.color-flip:hover {
 h3 {
   text-align: center; }
 
+.page-links {
+  padding-bottom: 20px; }
+  .page-links a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black; }
+  .page-links a:hover {
+    color: #EB866A; }
+
+.previous {
+  padding-left: 10px; }
+
+.next {
+  padding-right: 10px; }
+
 /*----------------------------------- Contact ---------------------------------------*/
 /*----------------------------------- Single Post Page ---------------------------------------*/
 .icon-single {
@@ -468,7 +527,9 @@ h3 {
     padding: 10px; } }
 
 .main-container p {
-  font-family: "Amethysta", Helvetica, sans-serif; }
+  font-family: "Amethysta", Helvetica, sans-serif;
+  color: #333333;
+  line-height: 1.5; }
   @media screen and (min-width: 200px) and (max-width: 600px) {
     .main-container p {
       text-align: justify; } }

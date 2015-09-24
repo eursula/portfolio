@@ -17,7 +17,7 @@
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header page-scroll">
-                <header>
+                <header class="header">
                     <!--<nav id="nav-links">-->
                         <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
