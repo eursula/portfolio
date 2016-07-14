@@ -1,5 +1,4 @@
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Yesteryear|Sacramento|Rochester|Allura|IM+Fell+DW+Pica|Merienda+One|Norican|Engagement|Lovers+Quarrel);
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -187,26 +186,22 @@ table {
   border-spacing: 0; }
 
 /*------------------------End Of Normalise --------*/
-@font-face {
-  font-family: MovusBrushPen;
-  src: url(/css/MovusBrushPen.ttf); }
-@font-face {
-  font-family: pennellino;
-  src: url(/css/pennellino.ttf); }
-@font-face {
-  font-family: painted;
-  src: url(/css/Painted.ttf); }
-@font-face {
-  font-family: wonderwall;
-  src: url(/css/wonderwall.ttf); }
+/*------------------------ Fonts --------*/
+/*@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Yesteryear|Sacramento|Rochester|Allura|IM+Fell+DW+Pica|Merienda+One|Norican|Engagement|Lovers+Quarrel|Shadows+Into+Light|Pacifico|Satisfy|Homemade+Apple|Stalemate);
+@import url(Pennellino-Regular.css);*/
+/*@font-face {
+    font-family: 'pennellino';
+    src: url('/css/pennellino.eot?#iefix') format('embedded-opentype'), 
+    url(/css/pennellino.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
 @font-face {
   font-family: itaki;
-  src: url(/css/itaki.ttf); }
-@font-face {
-  font-family: 'coret';
-  src: url("/css/Coret-Koas-webfont.ttf"); }
+  src: url(/css/itaki.woff) format("woff"); }
 body {
     /*
+    
 margin: 0 auto;
 
 //background-color: white;
@@ -285,7 +280,8 @@ nav.show {
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-padding-start: 0; }
 nav li {
   display: block;
   line-height: 1;
@@ -298,9 +294,7 @@ nav li {
       display: -ms-flexbox;
       display: flex;
       display: inline-block;
-      padding-left: 30px; }
-      nav li .left {
-        margin-left: 15px; } }
+      padding-left: 30px; } }
 nav li a {
   display: block; }
   @media screen and (min-width: 200px) and (max-width: 600px) {
@@ -374,9 +368,9 @@ object, embed {
     letter-spacing: 2px;
     font-weight: thin; }
   .title-box #name {
-    font-size: 7em;
+    font-size: 6em;
     color: #ECECEC;
-    font-family: pennellino, Helvetica, sans-serif;
+    font-family: "Pennellino", Helvetica, sans-serif;
     letter-spacing: 10px;
     -webkit-font-smoothing: antialiased;
     line-height: 2; }
@@ -396,7 +390,7 @@ object, embed {
 .link-title {
   font-size: 1.8em;
   margin-right: 10px;
-  font-family: pennellino, Helvetica, sans-serif;
+  font-family: 'pennellino';
   color: #1d2120; }
 
 img.my-pic {
@@ -417,8 +411,7 @@ img.my-pic {
 
 .greeting {
   font-size: 1.2em;
-  font-style: italic;
-  color: #EB866A; }
+  font-style: italic; }
 
 .header {
   position: fixed;
@@ -474,6 +467,9 @@ img.color-flip:hover {
 
 .item a {
   text-decoration: none; }
+  @media screen and (min-width: 200px) and (max-width: 600px) {
+    .item a {
+      padding-bottom: 150px; } }
   .item a h3 {
     color: black;
     font-size: 0.8em; }
@@ -535,7 +531,7 @@ h3 {
       text-align: justify; } }
 
 a.site-link {
-  font-family: pennellino, Helvetica, sans-serif;
+  font-family: "itaki", Helvetica, sans-serif;
   text-decoration: none;
   font-size: 3em;
   padding: 6px;

@@ -71,6 +71,12 @@ jQuery(function(){
 
 });
 
+if (Modernizr.fontface) {
+        document.write('Browser says @font-face IS supported');
+    } else {
+        document.write('Browser says @font-face NOT supported');
+    }
+
 
 
 

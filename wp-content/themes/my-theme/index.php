@@ -41,7 +41,8 @@ get_header(); ?>
                     
                     <div class="paragraph col-lg-12">
                         <p><span class="greeting">Hello!</span> and thanks for visting my site.</p>
-                        <p>My name is Eursula Hicks</p>
+                        <p>Originally from the beautiful North Canterbury region of South Island, New Zealand, I decided to call Auckland home after a few years of living in various parts of NZ, Australia and a trip around the world.</p><br>
+                        <p>I'd always had an interest in the tech industry,  .</p> 
                     </div>
                 </div>
             </div>
@@ -100,5 +101,5 @@ get_header(); ?>
             </div>
         </div>
     <?php endif; ?>
-
+    </section>
     <?php get_footer(); ?>

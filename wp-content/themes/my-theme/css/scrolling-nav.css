@@ -57,7 +57,7 @@ of those sections to manage the look and feel of the site. */
 .about-section {
     /*height: 700px;*/
     height: 100vh;
-    padding-top: 25vh;
+    padding-top: 15vh;
     text-align: center;
     background: #fff;
 
@@ -66,7 +66,7 @@ of those sections to manage the look and feel of the site. */
 .work-section {
     /*min-height: 1400px;*/
     height: 100vh;
-    padding-top: 25vh;
+    padding-top: 15vh;
     text-align: center;
     background: #fff;
     
@@ -84,7 +84,8 @@ of those sections to manage the look and feel of the site. */
 
 @media(max-width:767px) {
     .work-section {
-        min-height: 1400px;
+        min-height: 2000px;
+        /*padding-bottom: 5vh;*/
 
     }
 
@@ -92,6 +93,7 @@ of those sections to manage the look and feel of the site. */
     .work-section,
     .contact-section{
         padding-top: 10vh;
+
     }
 
 }
