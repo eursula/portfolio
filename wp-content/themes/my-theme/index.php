@@ -23,7 +23,7 @@ get_header(); ?>
                 <?php endwhile; else: ?>
                 <div class="col-lg-12">
                     <div class="title-box flex flex-column flex-j-center">
-                        <h3 id="name">Eursula Hicks</h3>
+                        <h1 id="name">Eursula Hicks</h1>
                         <h1 id="title">PERSONAL PORTFOLIO</h1>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <h1 class="link-title" id="2">ABOUT</h1>
                     
-                        <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/my-image.jpg' ) ); ?>" class="my-pic" alt="Eursula Hicks">
+                         
                     
                     <div class="paragraph col-lg-12">
                         <p><span class="greeting">Hello!</span> and thanks for visting my site.</p>

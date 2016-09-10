@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="icon-single col-lg-12 flex flex-j-center">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/logo.png' ) ); ?>" alt="logo">
+                        <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/signature-teal.png' ) ); ?>" height="150px" alt="logo">
                     </a>
                 </div> 
             </div>

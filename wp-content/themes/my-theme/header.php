@@ -12,7 +12,7 @@
     <!-- Navigation -->
     <div class="img-overlay">
         <div class="main-image">
-            <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/background-image.jpg' ) ); ?>" id="home" alt="home-image">
+           <img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/botanical-gold3.png' ) ); ?>" id="home" alt="home-image">
         </div>
     </div>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -30,7 +30,7 @@
                             <!--<i class="fa fa-bars hamburger"></i>-->
                             <li><a class="page-scroll" href="#intro">HOME</a></li>
                             <li class="left"><a class="page-scroll" href="#about">ABOUT</a></li>
-                            <li class="left"><a class="page-scroll" href="#intro"><img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/logo.png' ) ); ?>" alt="logo"></a></li>
+                            <li class="left"><a class="page-scroll" href="#intro"><img src="<?php echo esc_url( site_url( '/wp-content/themes/my-theme/css/img/signature-teal.png' ) ); ?>" alt="logo" width="250px"></a></li>
                             <li class="right"><a class="page-scroll" href="#work">WORK</a></li>
                             <li><a class="page-scroll" href="#contact">CONTACT</a></li>
                         </ul>
